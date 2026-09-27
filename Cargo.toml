@@ -1,0 +1,19 @@
+[package]
+name = "efreet"
+version = "0.1.0"
+edition = "2024"
+description = "Watch a Cardano address's UTxOs through a local node over node-to-client (N2C)"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+pallas-addresses = "1.4.0"
+pallas-codec = "1.4.0"
+pallas-crypto = "1.4.0"
+pallas-network = "1.4.0"
+pallas-primitives = "1.4.0"
+pallas-traverse = "1.4.0"
+thiserror = "2.0.21"
+
+[dev-dependencies]
+hex = "0.4.3"
+tokio = { version = "1.53.1", features = ["rt-multi-thread", "macros", "signal"] }
